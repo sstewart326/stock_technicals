@@ -11,16 +11,16 @@
 	<context:component-scan base-package="com.etf.volume.simulator.service" />
 	<mvc:annotation-driven />
 
-	<bean id="volumeSimulatorValidator"
-		class="com.etf.volume.simulator.service.validator.VolumeSimulatorValidator" />
+	<bean id="tickerTechnicalsValidator"
+		class="com.stock.technicals.service.validator.TickerTechnicalsValidator" />
 
 	<bean id="tickerTechnicalsController"
-		class="com.etf.volume.simulator.service.controller.TickerTechnicalsController">
+		class="com.stock.technicals.service.controller.TickerTechnicalsController">
 		<property name="volumeSimulatorValidator" ref="volumeSimulatorValidator" />
 	</bean>
 
 	<bean id="volumeSimulatorDAO"
-		class="com.etf.volume.simulator.service.persistence.VolumeSimulatorDAOImpl" >
+		class="com.stock.technicals.service.persistence.VolumeSimulatorDAOImpl" >
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
 

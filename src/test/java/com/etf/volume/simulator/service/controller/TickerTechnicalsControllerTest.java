@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.etf.volume.simulator.domain.ticker.technicals.TickerTechnicalsRequest;
 import com.etf.volume.simulator.domain.ticker.technicals.TickerTechnicalsResponse;
+import com.stock.technicals.service.controller.TickerTechnicalsController;
 
 
 public class TickerTechnicalsControllerTest extends TestBase {

@@ -8,11 +8,11 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.etf.volume.simulator.service.controller.TestBase;
-import com.etf.volume.simulator.service.entity.Price;
-import com.etf.volume.simulator.service.entity.PullDate;
-import com.etf.volume.simulator.service.entity.Ticker;
-import com.etf.volume.simulator.service.entity.Volume;
-import com.etf.volume.simulator.service.persistence.VolumeSimulatorDAO;
+import com.stock.technicals.service.entity.Price;
+import com.stock.technicals.service.entity.PullDate;
+import com.stock.technicals.service.entity.Ticker;
+import com.stock.technicals.service.entity.Volume;
+import com.stock.technicals.service.persistence.VolumeSimulatorDAO;
 
 public class HibernateTest extends TestBase {
 
