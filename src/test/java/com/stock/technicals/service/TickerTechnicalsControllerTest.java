@@ -1,4 +1,4 @@
-package com.etf.volume.simulator.service.controller;
+package com.stock.technicals.service;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

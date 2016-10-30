@@ -1,4 +1,4 @@
-package com.etf.volume.simulator.service.controller.persistence;
+package com.stock.technicals.service.persistence;
 
 import java.sql.Date;
 import java.util.HashSet;
@@ -7,7 +7,7 @@ import java.util.Set;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.etf.volume.simulator.service.controller.TestBase;
+import com.stock.technicals.service.TestBase;
 import com.stock.technicals.service.entity.Price;
 import com.stock.technicals.service.entity.PullDate;
 import com.stock.technicals.service.entity.Ticker;

@@ -9,6 +9,6 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<import resource="context/volume-simulator-context.xml"/>        
+	<import resource="context/stock-api-context.xml"/>        
 
 </beans>

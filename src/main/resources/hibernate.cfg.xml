@@ -12,9 +12,9 @@
         <property name="hibernate.id.new_generator_mappings">false</property>
         
         <!-- Mappings -->
-        <mapping class="com.etf.volume.simulator.service.entity.Price"/>
-        <mapping class="com.etf.volume.simulator.service.entity.PullDate"/>
-        <mapping class="com.etf.volume.simulator.service.entity.Ticker"/>
-        <mapping class="com.etf.volume.simulator.service.entity.Volume"/>
+        <mapping class="com.stock.technicals.service.entity.Price"/>
+        <mapping class="com.stock.technicals.service.entity.PullDate"/>
+        <mapping class="com.stock.technicals.service.entity.Ticker"/>
+        <mapping class="com.stock.technicals.service.entity.Volume"/>
     </session-factory>
 </hibernate-configuration>

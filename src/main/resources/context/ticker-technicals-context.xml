@@ -8,16 +8,14 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<context:component-scan base-package="com.etf.volume.simulator.service" />
+	<context:component-scan base-package="com.stock.technicals.service" />
 	<mvc:annotation-driven />
 
 	<bean id="tickerTechnicalsValidator"
 		class="com.stock.technicals.service.validator.TickerTechnicalsValidator" />
 
 	<bean id="tickerTechnicalsController"
-		class="com.stock.technicals.service.controller.TickerTechnicalsController">
-		<property name="volumeSimulatorValidator" ref="volumeSimulatorValidator" />
-	</bean>
+		class="com.stock.technicals.service.controller.TickerTechnicalsController"/>
 
 	<bean id="volumeSimulatorDAO"
 		class="com.stock.technicals.service.persistence.VolumeSimulatorDAOImpl" >
@@ -28,5 +26,8 @@
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="configLocation" value="classpath:hibernate.cfg.xml" />
 	</bean>
+	
+	<bean id="rsiCalculator" class="com.stock.technicals.service.util.RSICalculator" />
 
+	<bean id="tickerUtilities" class="com.stock.technicals.service.util.TickerUtilities" />
 </beans>
